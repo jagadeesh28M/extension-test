@@ -1,0 +1,13 @@
+{
+  "name": "extension-test-root",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm run dev --prefix website\" \"npm run dev --prefix extension\"",
+    "build": "concurrently \"npm run build --prefix website\" \"npm run build --prefix extension\"",
+    "dev:website": "npm run dev --prefix website",
+    "dev:extension": "npm run dev --prefix extension"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
